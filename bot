@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 import os
 
-TOKEN = os.getenv("8481838822:AAEhqgTnsHp4dhAF5hzMUAmXvL1kwQQpUvE")
+TOKEN = os.getenv("TOKEN")
 bot = telebot.TeleBot(TOKEN)
  
 #
@@ -1468,4 +1468,5 @@ def go_home(message):
         "رجعنا للبداية ✨",
         reply_markup=welcome()
     )
+
 bot.infinity_polling(timeout=30, long_polling_timeout=20, skip_pending=True)
